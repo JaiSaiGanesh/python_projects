@@ -271,3 +271,13 @@ for i in range(len(X)):
 for r in result:
    print(r)
 
+# number of occurences of a item in string
+string1="i am a good boy. do you know that ? yes of course i know that so what ? "
+x=string1.split(" ")
+dict={}
+for i in x:
+    if i in dict:
+        dict[i]+=1
+    else:
+        dict[i]=1
+print(dict)
