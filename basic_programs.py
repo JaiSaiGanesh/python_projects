@@ -1,16 +1,22 @@
 
-class basic_funstions:
+class basic_functions:
         
-    def addition_of_numbers(first_number,second_number):
+    def addition_of_numbers():
+        first_number=int(input("enter 1st number: "))
+        second_number=int(input("enter 2nd number: "))
         result=first_number+second_number
         print("addition of two numbers is:",result)
 
 
-    def multiplication_of_numbers(first_number,second_number):
+    def multiplication_of_numbers():
+        first_number=int(input("enter 1st number: "))
+        second_number=int(input("enter 2nd number: "))
         result=first_number*second_number
         print("multiplication of two numbers is:",result)
 
-    def division_of_numbers(first_number,second_number):
+    def division_of_numbers():
+        first_number=int(input("enter 1st number: "))
+        second_number=int(input("enter 2nd number: "))
         def float_division():
             result=first_number/second_number
             print("float division of two numbers is:",result)
@@ -18,27 +24,36 @@ class basic_funstions:
             result=(first_number//second_number)
             print("Floor Division:", result)
 
-    def substraction_of_numbers(first_number,second_number):
+    def substraction_of_numbers():
+        first_number=int(input("enter 1st number: "))
+        second_number=int(input("enter 2nd number: "))
         result=first_number-second_number
         print("substraction of two numbers is:",result)
 
-    def swapping_with_third_variable(first_number,second_number):
+    def swapping_with_third_variable():
+        first_number=int(input("enter 1st number: "))
+        second_number=int(input("enter 2nd number: "))
         third_variable = first_number   
         first_number= second_number
         second_number= third_variable
         print(f"First number: {first_number} , Second Number:{second_number}")
 
-    def swapping_without_third_variable(first_number,second_number):
+    def swapping_without_third_variable():
+        first_number=int(input("enter 1st number: "))
+        second_number=int(input("enter 2nd number: "))
         result=first_number+second_number
         first_number=result-first_number
         second_number=result-second_number
         print(f"First number: {first_number} , Second Number:{second_number}")
 
-    def area_of_a_triangle(base,height):
+    def area_of_a_triangle():
+        base=int(input("enter base: "))
+        height=int(input("enter height: "))
         area =(base * height)/2   
         print("Area of triangle :", round((area),2))
 
-    def positive_or_negative(numb):
+    def positive_or_negative():
+        numb=int(input("enter number: "))
         if ((numb>0)):
             print(f"{numb} is positive")
         elif ((numb<0)):
@@ -46,27 +61,33 @@ class basic_funstions:
         else:
             print(f"{numb} is 0")
 
-    def even_or_odd(numb):
+    def even_or_odd():
+        numb=int(input("enter number: "))
         if (((numb%2)==0)):
             print(f"{numb} is Even ")
         else:
             print('{} is Odd'.format(numb))
 
-    def largest_number_among_three(first_number,second_number,third_number):
+    def largest_number_among_three():
+        first_number=int(input("enter 1st number: "))
+        second_number=int(input("enter 2nd number: "))
+        third_number=int(input("enter 3rd number: "))
         largest=(max((first_number, second_number,third_number)))
         if first_number==second_number and second_number == third_number:
             print("{} {} {}".format(first_number , second_number, third_number),"are equal" )
         else:
             print("{}".format(largest,"is Largest Number"))
 
-    def leap_year(year):
+    def leap_year():
+        year=int(input("enter year: "))
         if(((year %4==0)&(year%100!=0))|(year%400==0)):
             print(f'{year} is Leap Year')
         else:
             print(f'{year} is Not A LeapYear ')
 
 
-    def prime_number(numb):
+    def prime_number():
+        numb=int(input("enter number: "))
         if numb==0|numb<0|numb==1:
             print("its not a prime number: ")
         else:
@@ -76,7 +97,9 @@ class basic_funstions:
             else:   
                 print (f'{numb} Is Prime Number')
 
-    def prime_number_in_interval(inter1,inter2):
+    def prime_number_in_interval():
+        inter1=int(input("enter 1st number: "))
+        inter2=int(input("enter 2nd number: "))
         for i in range(inter1,inter2):
             if i==0|i<0|i==1:
                 print("its not a prime number: ")
@@ -88,7 +111,8 @@ class basic_funstions:
                     print(f'{i} Is Prime Number')
 
 
-    def factorial_of_a_number(number):
+    def factorial_of_a_number():
+        number=int(input("enter number: "))
         if number < 0:
             print("Sorry, factorial does not exist for negative numbers")
         elif number == 0:
@@ -98,7 +122,8 @@ class basic_funstions:
                 factorial = factorial*i
         print("The factorial of",number,"is",factorial)
 
-    def fibbinocci_sequence(number):
+    def fibbinocci_sequence():
+        number=int(input("enter number: "))
         a=0
         b=1
         c=1
@@ -108,7 +133,8 @@ class basic_funstions:
             b=c
             c=a+b
         
-    def armstrong_number(num):
+    def armstrong_number():
+        num=int(input("enter number: "))
         sum_of_digit=0
         temp=num
         while temp>0:
@@ -121,7 +147,9 @@ class basic_funstions:
         else:
             print(num,"is not an Armstrong number")
 
-    def hcf(x,y):
+    def hcf():
+        x=int(input("enter 1st number: "))
+        y=int(input("enter 2nd number: "))
         
         hcf=0
         if x > y:
@@ -133,7 +161,9 @@ class basic_funstions:
                 hcf = i 
         print("The H.C.F. is", hcf)
 
-    def lcm(x,y):
+    def lcm():
+        x=int(input("enter 1st number: "))
+        y=int(input("enter 1st number: "))
         
         hcf=0
         if x > y:
@@ -146,8 +176,8 @@ class basic_funstions:
 
         print("LCM=", ((x*y)//hcf))
 
-    def palindrom(str1):
-        
+    def palindrom():
+        str1=str(input("enter string: "))
         str2=""
         length=len(str1)
         for i in range(length-1,-1,-1):
@@ -203,7 +233,8 @@ class basic_funstions:
         for r in result:
             print(r)
 
-    def no_of_occurence_of_an_item (string1):
+    def no_of_occurence_of_an_item ():
+        string1=str(input("enter large string: "))
         x=string1.split(" ")
         dict={}
         for i in x:
@@ -213,3 +244,77 @@ class basic_funstions:
                 dict[i]=1
         print(dict)
 
+
+while True:
+        print("\nOptions:")
+        print("1. addition_of_numbers")
+        print("2. multiplication_of_numbers")
+        print("3. division_of_numbers")
+        print("4. substraction_of_numbers")
+        print("5. swapping_with_third_variable")
+        print("6. swapping_without_third_variable")
+        print("7. area_of_a_triangle")
+        print("8. positive_or_negative")
+        print("9. even_or_odd")
+        print("10. largest_number_among_three")
+        print("11. leap_year")
+        print("12. prime_number")
+        print("13. prime_number_in_interval")
+        print("14. factorial_of_a_number")
+        print("15. fibbinocci_sequence")
+        print("16. armstrong_number")
+        print("17. hcf")
+        print("18. lcm")
+        print("19. palindrom")
+        print("20. addition_of_matrix")
+        print("21. multiplication_of_matix")
+        print("22. no_of_occurence_of_an_item")
+
+
+        choice = input("Enter your choice: ")
+
+        if choice == "1":
+            basic_functions.addition_of_numbers()
+        elif choice == "2":
+            basic_functions.multiplication_of_numbers()
+        elif choice == "3":
+            basic_functions.division_of_numbers()
+        elif choice == "4":
+            basic_functions.substraction_of_numbers()
+        elif choice == "5":
+            basic_functions.swapping_with_third_variable()
+        elif choice == "6":
+            basic_functions.swapping_without_third_variable()
+        elif choice == "7":
+            basic_functions.area_of_a_triangle()
+        elif choice == "8":
+            basic_functions.positive_or_negative()
+        elif choice == "9":
+            basic_functions.even_or_odd()
+        elif choice == "10":
+            basic_functions.largest_number_among_three()
+        elif choice == "11":
+            basic_functions.leap_year()
+        elif choice == "12":
+            basic_functions.prime_number()
+        elif choice == "13":
+            basic_functions.prime_number_in_interval()
+        elif choice == "14":
+            basic_functions.factorial_of_a_number()
+        elif choice == "15":
+            basic_functions.fibbinocci_sequence()
+        elif choice == "16":
+            basic_functions.armstrong_number()
+        elif choice == "17":
+            basic_functions.hcf()
+        elif choice == "18":
+            basic_functions.lcm()
+        elif choice == "19":
+            basic_functions.palindrom()
+        elif choice == "20":
+            basic_functions.addition_of_matrix()
+        elif choice == "21":
+            basic_functions.multiplication_of_matix()
+        else:
+            basic_functions.no_of_occurence_of_an_item()
+            
